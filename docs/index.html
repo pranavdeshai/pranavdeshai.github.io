@@ -1,0 +1,269 @@
+<!doctype html>
+
+<html lang="en" class="">
+  <head>
+    <title>Preview</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="">
+    <div class="prettify">
+      <div class="prettify-background">
+        <!-- Basic card -->
+        <div class="prettify-flashcard">
+          <div class="prettify-field front">This is front of the card</div>
+          <div class="prettify-divider" id="answer"></div>
+          <div class="prettify-field back">This is front of the card</div>
+        </div>
+
+        <!-- Cloze deletions -->
+        <div class="prettify-flashcard">
+          <div class="prettify-field front">
+            This is a
+            <span class="cloze">cloze deletion.</span>
+          </div>
+        </div>
+
+        <!-- Breadcrumbs to sub-deck -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck::Sub-subdeck</div>
+          </div>
+          <div class="prettify-field front">
+            Breadcrumbs to
+            <span class="cloze">sub-deck</span>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="prettify-flashcard">
+          <div class="prettify-field front">
+            <span class="cloze">Tags</span>
+            are displayed at the bottom of the card.
+          </div>
+          <div class="prettify-tags">
+            tag1 tag2::nested-tag2 tag3::nested-tag3::nested-nested-tag3
+          </div>
+        </div>
+
+        <!-- Mark -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+            <div class="prettify-mark">
+              <i class="fa-solid fa-bookmark"></i>
+            </div>
+          </div>
+          <div class="prettify-field front">
+            This a
+            <span class="cloze">marked card</span>
+          </div>
+        </div>
+
+        <!-- Formatting -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Formatting</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            <b>Bold text</b><br /><i>Italic text</i><br /><b
+              ><i>Bold and italic text</i></b
+            ><br /><u>Underlined text</u><br /><br />Hyperlink:&nbsp;<a
+              href="https://github.com/pranavdeshai/anki-prettify"
+              >https://github.com/pranavdeshai/anki-prettify</a
+            ><br /><br />
+          </div>
+        </div>
+
+        <!-- Code blocks -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Code block</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            <pre>
+# This program prints Hello, world!
+
+def main():
+    print('Hello, world!')
+
+main()
+</pre
+            >
+          </div>
+        </div>
+
+        <!-- Unordered list -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Unordered lists</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            Ingredients for pancake<br />
+            <ul>
+              <li>Flour</li>
+              <li>Milk</li>
+              <li>Sugar</li>
+              <li>Baking powder</li>
+              <li>Salt</li>
+              <li>Eggs</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ordered list -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Ordered lists</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            Ingredients for pancake<br />
+            <ol>
+              <li>Flour</li>
+              <li>Milk</li>
+              <li>Sugar</li>
+              <li>Baking powder</li>
+              <li>Salt</li>
+              <li>Eggs</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Ordered list -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Ordered lists</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            <table>
+              <thead>
+                <tr>
+                  <th>Header 1</th>
+                  <th>Header 2</th>
+                  <th>Header 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Row 1 Column 1</td>
+                  <td>Row 1 Column 2</td>
+                  <td>Row 1 Column 3</td>
+                </tr>
+                <tr>
+                  <td>Row 2 Column 1</td>
+                  <td>Row 2 Column 2</td>
+                  <td>Row 2 Column 3</td>
+                </tr>
+                <tr>
+                  <td>Row 3 Column1</td>
+                  <td>Row 3 Column 2</td>
+                  <td>Row 3 Column 3</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Footer 1</td>
+                  <td>Footer 2</td>
+                  <td>Footer 3</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Images</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            <img
+              src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Admonitions -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Admonitions</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            ```ad-note Note<br />Lorem ipsum --> dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.<br />```<br />
+            ```ad-important Important<br />Lorem ipsum --> dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.<br />```<br />
+            ```ad-tip Tip<br />Lorem ipsum --> dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.<br />```<br />
+            ```ad-quote Quote<br />Lorem ipsum --> dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.<br />```<br />
+          </div>
+        </div>
+
+        <!-- Image slider -->
+        <div class="prettify-flashcard">
+          <div class="prettify-header">
+            <div class="prettify-deck">Deck::Subdeck</div>
+          </div>
+          <div class="prettify-field front">Image slider</div>
+          <div class="prettify-divider"></div>
+          <div class="prettify-field back">
+            <div class="prettify-slider-container">
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <img
+                    id="img-1"
+                    src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg"
+                    alt=""
+                  />
+                  <img
+                    id="img-2"
+                    src="https://images.unsplash.com/photo-1600762516498-761775b86af7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                  <img
+                    id="img-3"
+                    src="https://images.unsplash.com/photo-1717647838910-40ba5bb9c12c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
